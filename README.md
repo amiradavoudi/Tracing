@@ -30,7 +30,7 @@ The 64-bit version of Windows 10 1809 and later, or Windows Server 2019 and late
 [Download link](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) <br>
 Download *IBM ILOG CPLEX Optimization Studio Free Edition* (Windows edition) from the below link: <br> 
 [Download link](https://www.ibm.com/account/reg/us-en/signup?formid=urx-20028) <br>
-Note that you should fill out the form to download the file, namely *cos_installer_preview-22.1.1.0.R0-M08SVML-win-x86-64.exe*.
+Note that you should fill out the corresponding form (shown in the link) to download the file, namely *cos_installer_preview-22.1.1.0.R0-M08SVML-win-x86-64.exe*.
 Python 3.10 <br> 
 Node.js v18
 
@@ -165,7 +165,7 @@ The experiment is about the evaluation of the toll-based attacking algorithm usi
 Run the file *toll-based-attacking-algorithm-with-heuristic.py*, and the results will be written to the *toll-based-algo-with-heuristic.log* file. <br>
 The results show the thresholds, ASR, and APDs w.r.t the wallet range [w<sub>l</sub>, w<sub>u</sub>]. <br>
 It takes about 2 minutes to get the results. <br>
-The results show that ASR and APD metrics show an upward trend as the threshold decreases. This trend is particularly noticeable in larger wallet ranges ([20, 40], [40, 60]), indicating a contribution to the improvement in ASR compared to the lower ASRs before applying the heuristic. <br>
+The results show that ASR and APDs metrics show an upward trend as the threshold decreases. This trend is particularly noticeable in larger wallet ranges ([20, 40], [40, 60]), indicating a contribution to the improvement in ASR compared to the lower ASRs before applying the heuristic. <br>
 The results are shown in Table 2, Section 5.2.
 
 #### Experiment 5: Figure 3(a)
