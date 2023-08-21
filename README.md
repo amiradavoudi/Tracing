@@ -254,12 +254,3 @@ The result is Figure 7, showing box plots indicating the distribution of success
 It takes about 1 minute to get the results. <br>
 The figure shows that half of the success rates (SRs) corresponding to the range of [0, 10]$ are nearly 50%, while the other half falls between 25% and 50% (shown in the first box plot). <br>
 The result is shown in Figure 7, Appendix M.
-
-## Limitations
-There are no limitations.
-
-## Notes on Reusability
-First, this section might not apply to your artifacts.
-Use it to share information on how your artifact can be used beyond your research paper, e.g., as a general framework.
-The overall goal of artifact evaluation is not only to reproduce and verify your research but also to help other researchers to re-use and improve on your artifacts.
-Please describe how your artifacts can be adapted to other settings, e.g., more input dimensions, other datasets, and other behavior, through replacing individual modules and functionality or running more iterations of a specific part.
