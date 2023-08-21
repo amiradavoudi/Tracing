@@ -44,7 +44,7 @@ Afterward, we describe how to set up everything and verify everything is set up 
 
 ### Accessibility
 All the source codes are available through the below link: <br>
-[link] https://github.com/amiradavoudi/Tracing.git
+[Source codes] (https://github.com/amiradavoudi/Tracing.git)
 
 ### Set up the environment
 First, install *Microsoft Visual C++ 2015-2022 Redistributable Package* as it is needed by the program in the next step. <br>
@@ -56,7 +56,7 @@ matplotlib 3.5.2 or later <br>
 
 ### Testing the Environment
 File *test.py* includes all the packages required for the execution of the source codes in this project. <br>
-If the file is executed without error, all the required packages are installed properly. <br>
+All the required packages are installed properly if the file is executed without error. <br>
 Run the file *test.py*, which should not produce any errors.
 
 ## Artifact Evaluation
@@ -165,7 +165,7 @@ The experiment is about the evaluation of the toll-based attacking algorithm usi
 Run the file *toll-based-attacking-algorithm-with-heuristic.py*, and the results will be written to the *toll-based-algo-with-heuristic.log* file. <br>
 The results show the thresholds, ASR, and APDs w.r.t the wallet range [w<sub>l</sub>, w<sub>u</sub>]. <br>
 It takes about 2 minutes to get the results. <br>
-The results show that ASR and APDs metrics show an upward trend as the threshold decreases. This trend is particularly noticeable in larger wallet ranges ([20, 40], [40, 60]), indicating a contribution to the improvement in ASR compared to the lower ASRs before applying the heuristic. <br>
+The results show that ASR and APD metrics show an upward trend as the threshold decreases. This trend is particularly noticeable in larger wallet ranges ([20, 40], [40, 60]), indicating a contribution to the improvement in ASR compared to the lower ASRs before applying the heuristic. <br>
 The results are shown in Table 2, Section 5.2.
 
 #### Experiment 5: Figure 3(a)
