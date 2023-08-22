@@ -27,15 +27,14 @@ x86 64-bit CPU (Intel / AMD architecture) <br>
 
 ### Software Requirements
 The 64-bit version of Windows 10 1809 and later, or Windows Server 2019 and later <br>
-[Download link](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) <br>
-Download *IBM ILOG CPLEX Optimization Studio Free Edition* (Windows edition) from the below link: <br> 
-[Download link](https://www.ibm.com/account/reg/us-en/signup?formid=urx-20028) <br>
-Note that you should fill out the corresponding form (shown in the link) to download the file, namely *cos_installer_preview-22.1.1.0.R0-M08SVML-win-x86-64.exe*.
+Download *Microsoft Visual C++ Redistributable*: [(Download link)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) <br>
+Download *IBM ILOG CPLEX Optimization Studio Free Edition* (Windows edition), namely *cos_installer_preview-22.1.1.0.R0-M08SVML-win-x86-64.exe*: [(Download link)](https://www.ibm.com/account/reg/us-en/signup?formid=urx-20028)
+Note that to download the file, you should fill out the corresponding form. <br>
 Python 3.10 <br> 
 Node.js v18
 
 ### Estimated Time and Storage Consumption
-The estimated Time depends on the file and varies between 2 minutes and ten days. <br>
+The estimated time depends on the file and varies between 2 minutes and ten days. <br>
 5 GB free disk space
 
 ## Environment
@@ -55,8 +54,7 @@ docplex 2.23.222 or later <br>
 matplotlib 3.5.2 or later <br>
 
 ### Testing the Environment
-File *test.py* includes all the packages required for the execution of the source codes in this project. <br>
-All the required packages are installed properly if the file is executed without error. <br>
+File *test.py* includes all the packages required for the execution of the source codes in this project. All the required packages are installed properly if the file is executed without error. <br>
 Run the file *test.py*, which should not produce any errors.
 
 ## Artifact Evaluation
@@ -70,50 +68,50 @@ Here, we list all our paper's main results and claims supported by our submitted
 The results are the ASRs regarding the toll-based attacking algorithm, shown in Table 1. <br>
 The results are w.r.t wallet ranges [0,10], [10, 20], and [20, 40]. <br>
 The number of plausible wallets includes 91, 721, and 2000; the ASRs include 61.38%, 14.31%, and 11.12%. <br>
-Please refer to Section 5.1 (Table 1) and the experiment 1. 
+Please refer to Section 5.1 of the paper (Table 1) and Experiment 1. 
 
 #### Main Result 2: Figure 2(a)
-Figure 2(a) shows the number of solutions per wallet balance (in dollars). <br>  
-Please refer to Section 5.1.3 (Figure 2) and the experiment 2. 
+Figure 2(a) shows the number of solutions per wallet balance (in dollars).<br>
+Please refer to Section 5.1.3 of the paper (Figure 2) and Experiment 2. 
 
 #### Main Result 3: Figure 2(b)
 The result in Figure 2(b) shows the run-time (in ms) for each wallet balance (in dollars). <br>
-Please refer to Section 5.1.3 (Figure 2) and the experiment 3. 
+Please refer to Section 5.1.3 of the paper (Figure 2) and Experiment 3. 
 
 #### Main Result 4: toll-based-algorithm-with-heuristic
 The ASRs and APDS regarding the toll-based attacking algorithm using the first heuristic are shown in Table 2. <br>
 The results are w.r.t wallet ranges [0, 10], [10, 20], and [20, 40]. <br> 
-Please refer to Section 5.2 (Table 2) and Experiment 4. 
+Please refer to Section 5.2 of the paper (Table 2) and Experiment 4. 
 
 #### Main Result 5: Figure 3(a)
 Figure 3(a) shows the average success rate for each toll price range w.r.t wallet range [0, 10]. <br>
-Please refer to Section 5.3 (Figure 3) and Experiment 5.
+Please refer to Section 5.3 of the paper (Figure 3) and Experiment 5.
 
 #### Main Result 6: Figure 3(b)
 Figure 3(b) shows the average success rate for each toll price range w.r.t wallet range [10, 20]. <br>
-Please refer to Section 5.3 (Figure 3) and the experiment 6.
+Please refer to Section 5.3 of the paper (Figure 3) and Experiment 6.
 
 #### Main Result 7: Figure 3(c)
 Figure 3(c) shows the average success rate for each toll price range w.r.t wallet range [20, 40]. <br>
-Please refer to Section 5.3 (Figure 3) and the experiment 7.
+Please refer to Section 5.3 of the paper (Figure 3) and Experiment 7.
 
 #### Main Result 8: Figure 3(d)
 Figure 3(d) shows the success rate for each wallet balance (in dollars). <br>
-Please refer to Section 5.3 (Figure 3) and the experiment 8. 
+Please refer to Section 5.3 of the paper (Figure 3) and Experiment 8. 
 
 #### Main Result 9: Figure 3(e)
 Figure 3(e) shows the average success rate for each billing period length(in weeks). <br>
-Please refer to Section 5.3 (Figure 3) and the experiment 9. 
+Please refer to Section 5.3 of the paper (Figure 3) and Experiment 9. 
 
 #### Main Result 10: Figure 3(f) 
 The result is Figure 3(f), showing the average success rate for each number of toll stations. <br>
-Please refer to Section 5.3 (Figure 3) and the experiment 10. 
+Please refer to Section 5.3 of the paper (Figure 3) and Experiment 10. 
 
 #### Main Result 11: cycle-based-algorithm
 The results are the ASRs regarding the cycle-based attacking algorithm, shown in Table 1. <br>
 The results are w.r.t wallet ranges [0, 10], [10, 20], and [20, 40]. The number of plausible wallets includes
 91, 721, and 2000 ASRs include 51%, 11%, and 0.28%. <br>
-Please refer to Sections 5.1 (Table 1), 6.2, and Experiment 11.
+Please refer to Sections 5.1 of the paper (Table 1), 6.2, and Experiment 11.
 
 #### Main Result 12: Figure 5
 The result in Figure 5 shows the distribution of success rates across all plausible wallets with the range [w<sub>l</sub>, w<sub>u</sub>]. <br>
@@ -256,5 +254,5 @@ in a pdf named *distribution-of-SR-cycles.png*. <br>
 For more details, see the generated log file named *figure7.log*. <br>
 The result is Figure 7, showing box plots indicating the distribution of success rates per range [w<sub>l</sub>, w<sub>u</sub>]. <br>
 It takes about 1 minute to get the results. <br>
-The figure shows that half of the success rates (SRs) corresponding to the range of [0, 10]$ are nearly 50%, while the other half falls between 25% and 50% (shown in the first box plot). <br>
+The figure shows that half of the success rates (SRs) corresponding to the range of [0, 10] are nearly 50%, while the other half falls between 25% and 50% (shown in the first box plot). <br>
 The result is shown in Figure 7, Appendix M.
