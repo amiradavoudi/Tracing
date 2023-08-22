@@ -257,5 +257,5 @@ in *distribution-of-SR-cycles.png*. <br>
 For more details, see the generated log file named *figure7.log*. <br>
 The result is Figure 7, showing box plots indicating the distribution of success rates per range [w<sub>l</sub>, w<sub>u</sub>]. <br>
 It takes about 2 minute to get the results. <br>
-The figure shows that half of the success rates (SRs) corresponding to the range of [0, 10] are nearly 50%, while the other half falls between 25% and 50% (shown in the first box plot). <br>
+The figure shows that half of the success rates (SRs) corresponding to the range of [0, 10] are nearly 50%, while the other half fall between 10% and 50% (shown in the first box plot). <br>
 The result is shown in Figure 7, Appendix M.
