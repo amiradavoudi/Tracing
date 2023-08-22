@@ -225,9 +225,9 @@ The result is shown in Figure 3(f), Section 5.3.
 The experiment is about the evaluation of the cycle-based attacking algorithm. <br> 
 To generate the results, the following three steps should be performed: <br>
 
-(1) First, set the wallet range [w<sub>l</sub>, w<sub>u</sub>], where w_l and w_u indicate the lower and upper bounds of the range.
+(1) First, set the wallet range [w<sub>l</sub>, w<sub>u</sub>], where w<sub>l</sub> and w<sub>u</sub> indicate the lower and upper bounds of the range.
 In the file *write-the-plausible-traces.py*, set the two variables *lower_bound_wallet* and *upper_bound_wallet* to set the range. 
-For example, the variables are set to 0 and 10 in the file, indicating the wallet range [0, 10]. 
+For example, by default, the variables are set to 0 and 10 in the file, indicating the wallet range [0, 10]. 
 Then, run the file *write-the-plausible-traces.py*, which generates all plausible traces corresponding to all
 plausible wallet balances within the range [w<sub>l</sub>, w<sub>u</sub>], written to the file *plausible_traces.txt*. <br>
 (2) Run the file *create_partitions.js*, getting the file *plausible_traces.txt* as its
@@ -236,7 +236,7 @@ input, and creates all the corresponding partitions written to the file *partiti
 stored in the file *partitions.txt*. The results will be written to the *cycle-based-algo.log* file. <br>
 The results show the average success rate (ASR) w.r.t the wallet range [w<sub>l</sub>, w<sub>u</sub>]. <br>
 The ASR for approximately 61.38% of drivers is around 51%, which is relatively high, and the ASR for approximately 14.31% is relatively low, i.e., 11%. <br>
-It takes about 2 minutes to get the results. <br>
+It takes about 5 minutes to get the results. <br>
 The results are shown in Table 1, Section 5.1.
 
 #### Experiment 12: Figure 5
@@ -244,7 +244,7 @@ The experiment is about the distribution of success rates across the plausible t
 Run the file *generate-figure5.py*, and the graph will be saved in *distribution-of-SR.png*. <br>
 For more details, see the generated log file named *figure5.log*. <br>
 The result in Figure 5 shows box plots indicating the distribution of success rates per range [w<sub>l</sub>, w<sub>u</sub>]. <br>
-It takes about 2 minutes to get the results. <br>
+It takes about 10 minutes to get the results. <br>
 The figure shows that almost all of the success rates (SRs) within the range of [0, 10]$ are 100% (shown in the first box plot). <br>
 The result is shown in Figure 5, Appendix F.
 
@@ -253,9 +253,9 @@ The result is shown in Figure 5, Appendix F.
 The experiment is about the distribution of success rates across the plausible traces within the range [w<sub>l</sub>, w<sub>u</sub>]. <br>
 Run the file *generate-figure7.py*, which reads the file *distribution-SR.txt*, including three lists of success rate, each of
 which corresponds to the following wallet ranges: [0, 10], [10, 20], [20, 40]. After running the file, the graph will be saved
-in a pdf named *distribution-of-SR-cycles.png*. <br>
+in *distribution-of-SR-cycles.png*. <br>
 For more details, see the generated log file named *figure7.log*. <br>
 The result is Figure 7, showing box plots indicating the distribution of success rates per range [w<sub>l</sub>, w<sub>u</sub>]. <br>
-It takes about 1 minute to get the results. <br>
+It takes about 2 minute to get the results. <br>
 The figure shows that half of the success rates (SRs) corresponding to the range of [0, 10] are nearly 50%, while the other half falls between 25% and 50% (shown in the first box plot). <br>
 The result is shown in Figure 7, Appendix M.
