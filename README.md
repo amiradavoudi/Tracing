@@ -204,7 +204,7 @@ The result is shown in Figure 3(d), Section 5.3.
 
 #### Experiment 9: Figure 3(e)
 The experiment is about the impact of billing period length on privacy. <br>
-Run the file *generate-figure2(e).py*, and the graph will be saved in a pdf named *ASR-billing-period.pdf*. <br>
+Run the file *generate-figure2(e).py*, and the graph will be saved in *ASR-billing-period.pdf*. <br>
 For more details, see the generated log file named *figure2(e).log*. <br>
 The result is Figure 3(e), showing the ASR per each billing period length. <br> 
 It takes about 5 hours to get the results. <br>
@@ -213,7 +213,7 @@ The result is shown in Figure 3(e), Section 5.3.
 
 #### Experiment 10: Figure 3(f)
 The experiment is about the impact of the number of toll stations on privacy. <br>
-Run the file *generate-figure2(f).py*, and the graph will be saved in a pdf named *ASR-num-of-tolls.pdf*. <br>
+Run the file *generate-figure2(f).py*, and the graph will be saved in *ASR-num-of-tolls.pdf*. <br>
 For more details, see the generated log file named *figure2(f).log*. <br>
 The result is Figure 3(f), showing the ASR for each number of toll stations. <br>
 It takes about 48 hours to get the results. <br>
@@ -241,7 +241,7 @@ The results are shown in Table 1, Section 5.1.
 
 #### Experiment 12: Figure 5
 The experiment is about the distribution of success rates across the plausible traces within the range [w<sub>l</sub>, w<sub>u</sub>]. <br>
-Run the file *generate-figure5.py*, and the graph will be saved in a pdf named *distribution-of-SR.png*. <br>
+Run the file *generate-figure5.py*, and the graph will be saved in *distribution-of-SR.png*. <br>
 For more details, see the generated log file named *figure5.log*. <br>
 The result in Figure 5 shows box plots indicating the distribution of success rates per range [w<sub>l</sub>, w<sub>u</sub>]. <br>
 It takes about 2 minutes to get the results. <br>
