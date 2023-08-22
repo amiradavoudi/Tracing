@@ -100,7 +100,7 @@ Figure 3(d) shows the success rate for each wallet balance (in dollars). <br>
 Please refer to Section 5.3 of the paper (Figure 3) and Experiment 8. 
 
 #### Main Result 9: Figure 3(e)
-Figure 3(e) shows the average success rate for each billing period length(in weeks). <br>
+Figure 3(e) shows the average success rate for each billing period length (in weeks). <br>
 Please refer to Section 5.3 of the paper (Figure 3) and Experiment 9. 
 
 #### Main Result 10: Figure 3(f) 
@@ -110,7 +110,7 @@ Please refer to Section 5.3 of the paper (Figure 3) and Experiment 10.
 #### Main Result 11: cycle-based-algorithm
 The results are the ASRs regarding the cycle-based attacking algorithm, shown in Table 1. <br>
 The results are w.r.t wallet ranges [0, 10], [10, 20], and [20, 40]. The number of plausible wallets includes
-91, 721, and 2000 ASRs include 51%, 11%, and 0.28%. <br>
+91, 721, and 2000 and ASRs include 51%, 11%, and 0.28%. <br>
 Please refer to Sections 5.1 of the paper (Table 1), 6.2, and Experiment 11.
 
 #### Main Result 12: Figure 5
@@ -141,7 +141,7 @@ The results are shown in Table 1, Section 5.1.
 
 #### Experiment 2: Figure 2(a)
 The experiment is about the algorithm's effectiveness. <br>
-Run the file *generate-figure2(a).py*, and the graph will be saved in a pdf named *solutions.pdf*. <br>
+Run the file *generate-figure2(a).py*, and the graph will be saved in *solutions.pdf*. <br>
 For more details, see the generated log file named *figure2(a).log*. <br>
 The result is Figure 2(a), showing the number of solutions per wallet balance. <br>
 It takes about 2 minutes to get the results. <br>
@@ -150,7 +150,7 @@ The result is shown in Figure 2(a), Section 5.1.3.
 
 #### Experiment 3: Figure 2(b)
 The experiment is about the algorithm's effectiveness. <br>
-Run the file *generate-figure2(b).py*, and the graph will be saved in a pdf named *runtimes.pdf*. <br>
+Run the file *generate-figure2(b).py*, and the graph will be saved in *runtimes.pdf*. <br>
 For more details, see the generated log file named *figure2(b).log*. <br>
 Figure 2(b) shows the run-time (in ms) for each wallet balance. <br>
 It takes about 2 minutes to get the results. <br>
@@ -168,31 +168,34 @@ The results are shown in Table 2, Section 5.2.
 
 #### Experiment 5: Figure 3(a)
 The experiment is about the impact of toll price settings on privacy. <br>
-Run the file *generate-figure3(a).py*, and the results will be written to *figure3(a).log* file. <br>
-The results show the average success rate w.r.t each toll price range [1,j], 1 <= j <= 10. <br>
+Run the file *generate-figure3(a).py*, and the graph will be saved in *figure3(a).pdf*. <br> 
+For more details, see the generated log file named *figure3(a).log*. <br>
+The results show the average success rate w.r.t each toll price range [1, j], 1 <= j <= 10. <br>
 It takes about 90 minutes to get the results; the needed space is about 10MB. <br>
 Figure 3(a) demonstrates that the ASR increases as the toll price range gets larger. The ASR increases from zero to almost 96%. <br>
 The result is shown in Figure 3(a), Section 5.3.
 
 #### Experiment 6: Figure 3(b)
 The experiment is about the impact of toll price settings on privacy. <br>
-Run the file *generate-figure3(b).py*, and the results will be written to *figure3(b).log* file. <br>
-The results show the average success rate w.r.t each toll price range [1,j], 1 <= j <= 10. <br>
-It takes about 2 minutes to get the results; the needed space is about 1GB. <br>
+Run the file *generate-figure3(b).py*, and the graph will be saved in *figure3(b).pdf*. <br> 
+For more details, see the generated log file named *figure3(b).log*. <br>
+The results show the average success rate w.r.t each toll price range [1, j], 1 <= j <= 10. <br>
+It takes about 90 hours to get the results; the needed space is about 1GB. <br>
 Figure 3(b) demonstrates that the ASR increases as the toll price range gets larger. The ASR increases from zero to almost 73%. <br>
 The result is shown in Figure 3(b), Section 5.3.
 
 #### Experiment 7: Figure 3(c)
 The experiment is about the impact of toll price settings on privacy. <br>
-Run the file *generate-figure3(c).py*, and the results will be written to *figure3(c).log* file. <br>
-The results show the average success rate w.r.t each toll price range [1,j], 1 <= j <= 10. <br>
-It takes about 2 minutes to get the results; the needed space is about 1GB. <br>
+Run the file *generate-figure3(c).py*, and the graph will be saved in *figure3(c).pdf*. <br> 
+For more details, see the generated log file named *figure3(c).log*. <br>
+The results show the average success rate w.r.t each toll price range [1, j], 1 <= j <= 10. <br>
+It takes about 240 hours to get the results; the needed space is about 1GB. <br>
 Figure 3(c) demonstrates that the ASR increases as the toll price range gets larger. The ASR increases from zero to almost 15%. <br>
 The result is shown in Figure 3(c), Section 5.3.
 
 #### Experiment 8: Figure 3(d)
 The experiment is about the impact of wallet balances on privacy. <br>
-Run the file *generate-figure2(d).py*, and the graph will be saved in a pdf named *success-rate-wallet.pdf*. <br>
+Run the file *generate-figure2(d).py*, and the graph will be saved in *success-rate-wallet.pdf*. <br>
 For more details, see the generated log file named *figure2(d).log*. <br>
 The result is Figure 3(d), showing the success rate for each wallet balance. <br>
 It takes about 2 minutes to get the results. <br>
@@ -213,7 +216,7 @@ The experiment is about the impact of the number of toll stations on privacy. <b
 Run the file *generate-figure2(f).py*, and the graph will be saved in a pdf named *ASR-num-of-tolls.pdf*. <br>
 For more details, see the generated log file named *figure2(f).log*. <br>
 The result is Figure 3(f), showing the ASR for each number of toll stations. <br>
-It takes about 2 minutes to get the results. <br>
+It takes about 48 hours to get the results. <br>
 Figure 3(f) illustrates that the algorithm's ASR remains high for a low number of toll stations. <br>
 The result is shown in Figure 3(f), Section 5.3.
 
