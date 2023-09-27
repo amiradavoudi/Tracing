@@ -8,7 +8,7 @@ Artifacts HotCRP Id: **#6**
 Requested Badge: **Reproducible**
 
 ## Description
-This repository contains the source codes for reproducing the results shown in Tables 1 and 2. The codes also generate the plots of the figures in the main body of the paper, including 3, 4(a), 4(b), 5, 6(a), 6(b), 6(c), 6(d), 6(e), 6(f).
+This repository contains the source codes for reproducing the results shown in Tables 1 and 2. The codes also generate the plots of the figures in the main body of the paper, including Figure 3, 4(a), 4(b), 5, 6(a), 6(b), 6(c), 6(d), 6(e), 6(f).
 ### Security/Privacy Issues and Ethical Concerns
 There are no Security/Privacy Issues and Ethical Concerns.
 
@@ -67,56 +67,56 @@ Here, we list all our paper's main results and claims supported by our submitted
 #### Main Result 1: tsd-attack
 The results are the ASRs regarding the tsd-attack, shown in Table 1. <br>
 The results are w.r.t wallet ranges [0,10], [10, 20], and [20, 40]. <br>
-The number of plausible wallets includes 91, 721, and 2000; the ASRs include 61.38%, 14.31%, and 11.12%. <br>
+The number of plausible wallets includes 91, 721, and 2000; the ASRs include 94%, 54%, and 5%. <br>
 Please refer to Section 5.1 of the paper (Table 1) and Experiment 1. 
 
 #### Main Result 2: Figure 4(a)
 Figure 4(a) shows the number of solutions per wallet balance (in dollars).<br>
-Please refer to Section 5.1.3 of the paper (Figure 2) and Experiment 2. 
+Please refer to Section 5.2.3 of the paper (Figure 4) and Experiment 2. 
 
 #### Main Result 3: Figure 4(b)
 The result in Figure 4(b) shows the run-time (in ms) for each wallet balance (in dollars). <br>
-Please refer to Section 5.1.3 of the paper (Figure 2) and Experiment 3. 
+Please refer to Section 5.2.3 of the paper (Figure 4) and Experiment 3. 
 
 #### Main Result 4: tsd-attack-with-heuristic
 The ASRs and APDS regarding the tsd-attack using the first heuristic are shown in Table 2. <br>
 The results are w.r.t wallet ranges [0, 10], [10, 20], and [20, 40]. <br> 
-Please refer to Section 5.2 of the paper (Table 2) and Experiment 4. 
+Please refer to Section 5.3 of the paper (Table 2) and Experiment 4. 
 
 #### Main Result 5: Figure 6(a)
 Figure 6(a) shows the average success rate for each toll price range w.r.t wallet range [0, 10]. <br>
-Please refer to Section 5.3 of the paper (Figure 3) and Experiment 5.
+Please refer to Section 8 of the paper (Figure 6) and Experiment 5.
 
 #### Main Result 6: Figure 6(b)
 Figure 6(b) shows the average success rate for each toll price range w.r.t wallet range [10, 20]. <br>
-Please refer to Section 5.3 of the paper (Figure 3) and Experiment 6.
+Please refer to Section 8 of the paper (Figure 6) and Experiment 6.
 
 #### Main Result 7: Figure 6(c)
 Figure 6(c) shows the average success rate for each toll price range w.r.t wallet range [20, 40]. <br>
-Please refer to Section 5.3 of the paper (Figure 3) and Experiment 7.
+Please refer to Section 8 of the paper (Figure 6) and Experiment 7.
 
 #### Main Result 8: Figure 6(d)
 Figure 6(d) shows the success rate for each wallet balance (in dollars). <br>
-Please refer to Section 5.3 of the paper (Figure 3) and Experiment 8. 
+Please refer to Section 8 of the paper (Figure 6) and Experiment 8. 
 
 #### Main Result 9: Figure 6(e)
 Figure 6(e) shows the average success rate for each billing period length (in weeks). <br>
-Please refer to Section 5.3 of the paper (Figure 3) and Experiment 9. 
+Please refer to Section 8 of the paper (Figure 6) and Experiment 9. 
 
 #### Main Result 10: Figure 6(f) 
 The result is Figure 6(f), showing the average success rate for each number of toll stations. <br>
-Please refer to Section 5.3 of the paper (Figure 3) and Experiment 10. 
+Please refer to Section 8 of the paper (Figure 6) and Experiment 10. 
 
 #### Main Result 11: cd attack
 The results are the ASRs regarding the cd attack, shown in Table 1. <br>
 The results are w.r.t wallet ranges [0, 10], [10, 20], and [20, 40]. The number of plausible wallets includes
 91, 721, and 2000 and ASRs include 51%, 11%, and 0.28%. <br>
-Please refer to Sections 5.1 of the paper (Table 1), 6.2, and Experiment 11.
+Please refer to Sections 5.1, 7 of the paper (Table 1) and Experiment 11.
 
 #### Main Result 12: Figure 3
 The result in Figure 3 shows the distribution of success rates across all plausible wallets within the range [w<sub>l</sub>, w<sub>u</sub>]. <br>
 The results are w.r.t the tsd-attack and the wallet ranges [0, 10], [10, 20], and [20, 40]. <br> 
-Please refer to Section 5.2 and Experiment 12.  
+Please refer to Section 5.2.2 and Experiment 12.  
 
 #### Main Result 13: Figure 5
 The result in Figure 5 shows the distribution of success rates across all plausible wallets within the range [w<sub>l</sub>, w<sub>u</sub>]. <br>
@@ -146,7 +146,7 @@ For more details, see the generated log file named *figure4-a.log*. <br>
 The result is Figure 4(a), showing the number of solutions per wallet balance. <br>
 It takes about 2 minutes to get the results. <br>
 The Figure shows that although solving a linear diophantine equation is NP-complete in general, the equation can be solved, given the real settings of Brisbane's ETC system. The graph shows that for wallets below 10$ (93 red points), the number of plausible solutions is one or two, meaning that a significant proportion of drivers (61.38%) have very low privacy. <br>
-The result is shown in Figure 4(a), Section 5.1.3.
+The result is shown in Figure 4(a), Section 5.2.3.
 
 #### Experiment 3: Figure 4(b)
 The experiment is about the algorithm's effectiveness. <br>
@@ -154,7 +154,7 @@ Run the file *generate-figure4-b.py*, and the graph will be saved in *runtimes.p
 For more details, see the generated log file named *figure4-b.log*. <br>
 Figure 4(b) shows the run-time (in ms) for each wallet balance. <br>
 It takes about 2 minutes to get the results. <br>
-The result is shown in Figure 4(b), Section 5.1.3. <br>
+The result is shown in Figure 4(b), Section 5.2.3. <br>
 The Figure shows that although solving a linear diophantine equation is NP-complete in general, the equation can be solved quickly, given the real settings of Brisbane's ETC system. <br>
 Note: Since the runtimes heavily depend on the hardware on which the code is executed, the results will probably vary.
 
@@ -164,7 +164,7 @@ Run the file *tsd-attack-with-heuristic.py*, and the results will be written to 
 The results show the thresholds, ASR, and APDs w.r.t the wallet range [w<sub>l</sub>, w<sub>u</sub>]. <br>
 It takes about 25 minutes to get the results. <br>
 The results show that ASR and APD metrics show an upward trend as the threshold decreases. This trend is particularly noticeable in larger wallet ranges ([20, 40], [40, 60]), indicating a contribution to the improvement in ASR compared to the lower ASRs before applying the heuristic. <br>
-The results are shown in Table 2, Section 5.2.
+The results are shown in Table 2, Section 5.3.
 
 #### Experiment 5: Figure 6(a)
 The experiment is about the impact of toll price settings on privacy. <br>
@@ -173,27 +173,25 @@ For more details, see the generated log file named *figure6-a.log*. <br>
 The results show the average success rate w.r.t each toll price range [1, j], 1 <= j <= 10. <br>
 It takes about 90 minutes to get the results; the needed space is about 10MB. <br>
 Figure 6(a) demonstrates that the ASR increases as the toll price range gets larger. The ASR increases from zero to almost 96%. <br>
-The result is shown in Figure 6(a), Section 5.3.
+The result is shown in Figure 6(a), Section 8.
 
 #### Experiment 6: Figure 6(b)
 The experiment is about the impact of toll price settings on privacy. <br>
 Run the file *generate-figure6-b.py*, and the graph will be saved in *figure6-b.pdf*. <br> 
 For more details, see the generated log file named *figure6-b.log*. <br>
 The results show the average success rate w.r.t each toll price range [1, j], 1 <= j <= 10. <br>
-It takes about 90 hours to get the results; the needed space is about 1GB. We also provide the file *generate-figure6-b-condensed.py* that 
-takes the precomputed average success rates as the input and generates the figure. <br>
+It takes about 90 hours to get the results; the needed space is about 1 GB. To facilitate the quick generation of the figure, we also provide the file *generate-figure6-b-condensed.py*, which takes the precomputed average success rates as input and generates the figure. <br>
 Figure 6(b) demonstrates that the ASR increases as the toll price range gets larger. The ASR increases from zero to almost 73%. <br>
-The result is shown in Figure 6(b), Section 5.3.
+The result is shown in Figure 6(b), Section 8.
 
 #### Experiment 7: Figure 6(c)
 The experiment is about the impact of toll price settings on privacy. <br>
 Run the file *generate-figure6-c.py*, and the graph will be saved in *figure6-c.pdf*. <br> 
 For more details, see the generated log file named *figure6-c.log*. <br>
 The results show the average success rate w.r.t each toll price range [1, j], 1 <= j <= 10. <br>
-It takes about 240 hours to get the results; the needed space is about 1GB. We also provide the file *generate-figure6-c-condensed.py* that 
-takes the precomputed average success rates as the input and generates the figure.<br>
+It takes about 240 hours to get the results; the needed space is about 1 GB. To facilitate the quick generation of the figure, we also provide the file *generate-figure6-c-condensed.py*, which takes the precomputed average success rates as input and generates the figure.<br>
 Figure 6(c) demonstrates that the ASR increases as the toll price range gets larger. The ASR increases from zero to almost 15%. <br>
-The result is shown in Figure 6(c), Section 5.3.
+The result is shown in Figure 6(c), Section 8.
 
 #### Experiment 8: Figure 6(d)
 The experiment is about the impact of wallet balances on privacy. <br>
@@ -202,7 +200,7 @@ For more details, see the generated log file named *figure6-d.log*. <br>
 The result is Figure 6(d), showing the success rate for each wallet balance. <br>
 It takes about 2 minutes to get the results. <br>
 Overall, small wallet balances lead to higher ASRs. Figure 6(d) shows that drivers (above %75 of total drivers) with wallet balances below 35$ are more at risk of a privacy violation. <br>
-The result is shown in Figure 6(d), Section 5.3.
+The result is shown in Figure 6(d), Section 8.
 
 #### Experiment 9: Figure 6(e)
 The experiment is about the impact of billing period length on privacy. <br>
@@ -211,26 +209,25 @@ For more details, see the generated log file named *figure6-e.log*. <br>
 The result is Figure 6(e), showing the ASR per each billing period length. <br> 
 It takes about 5 hours to get the results. <br>
 Figure 6(e) shows that a short billing period leads to a high average success rate. <br>
-The result is shown in Figure 6(e), Section 5.3.
+The result is shown in Figure 6(e), Section 8.
 
 #### Experiment 10: Figure 6(f)
 The experiment is about the impact of the number of toll stations on privacy. <br>
 Run the file *generate-figure6-f.py*, and the graph will be saved in *ASR-num-of-tolls.pdf*. <br>
 For more details, see the generated log file named *figure6-f.log*. <br>
 The result is Figure 6(f), showing the ASR for each number of toll stations. <br>
-It takes about 48 hours to get the results. We also provide the file *generate-figure6-f-condensed.py* that 
-takes the precomputed average success rates as the input and generates the figure. <br>
+It takes about 48 hours to get the results. To facilitate the quick generation of the figure, we also provide the file *generate-figure6-f-condensed.py*, which takes the precomputed average success rates as input and generates the figure. <br>
 Figure 6(f) illustrates that the algorithm's ASR remains high for a low number of toll stations. <br>
-The result is shown in Figure 6(f), Section 5.3.
+The result is shown in Figure 6(f), Section 8.
 
 
 #### Experiment 11: cd attack
 The experiment is about the evaluation of the cd attack. <br> 
 To generate the results, the following three steps should be performed: <br>
 
-(1) First, set the wallet range [w<sub>l</sub>, w<sub>u</sub>], where w_l and w_u indicate the lower and upper bounds of the range.
-In the file *write-the-plausible-traces.py*, set the two variables *lower_bound_wallet* and *upper_bound_wallet* to set the range. 
-For example, the variables are set to 0 and 10 in the file, indicating the wallet range [0, 10]. 
+(1) First, set the wallet range [w<sub>l</sub>, w<sub>u</sub>], where w<sub>l</sub> and w<sub>u</sub> indicate the lower and upper bounds of the range. 
+To this end, in the file *write-the-plausible-traces.py*, set the two variables *lower_bound_wallet* and *upper_bound_wallet*. 
+For example, the variables are set to 1 and 10 in the file, indicating the wallet range [1, 10]. 
 Then, run the file *write-the-plausible-traces.py*, which generates all plausible traces corresponding to all
 plausible wallet balances within the range [w<sub>l</sub>, w<sub>u</sub>], written to the file *plausible_traces.txt*. <br>
 (2) Run the file *create_partitions.js*, getting the file *plausible_traces.txt* as its
@@ -249,7 +246,7 @@ For more details, see the generated log file named *figure3.log*. <br>
 The result in Figure 3 shows box plots indicating the distribution of success rates per range [w<sub>l</sub>, w<sub>u</sub>]. <br>
 It takes about 2 minutes to get the results. <br>
 The figure shows that almost all the success rates (SRs) within the range of [0, 10]$ are 100% (shown in the first box plot). <br>
-The result is shown in Figure 3, Section 5.2.
+The result is shown in Figure 3, Section 5.2.2.
 
 
 #### Experiment 13: Figure 5
