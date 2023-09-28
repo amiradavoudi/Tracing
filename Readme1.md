@@ -48,14 +48,17 @@ All the source codes are available through the below link: <br>
 ### Set up the environment
 First, install *Microsoft Visual C++ 2015-2022 Redistributable Package* as it is needed by the program in the next step. <br>
 Install *IBM ILOG CPLEX Optimization Studio Free Edition*. Please follow the instructions during the installation. <br> 
-Install Python 3.10 or later. <br>
+Install Python 3.10. <br>
 Install the following Python packages: <br>
 pip install docplex==2.23.222 (docplex 2.23.222 or later) <br>
 pip install matplotlib==3.5.2 (matplotlib 3.5.2 or later) <br>
+pip install numpy==1.23.1
 
 ### Testing the Environment
-File *test.py* includes all the packages required for the execution of the source codes in this project. All the required packages are installed properly if the file is executed without error. <br>
-Run the file *test.py*, which should not produce any errors.
+File *test.py* includes all the packages required for the execution of the source codes in this project. <br> 
+Run the file *test.py*. If all the required packages are installed properly, the log file *test.log* should be created, and outputs are written there,
+from *output1* to *output5*. Besides, the file *test-figure.pdf* should be created, showing a graph. <br>
+
 
 ## Artifact Evaluation
 This section includes all the steps required to evaluate our artifact's functionality and validate our paper's key results and claims. <br>
@@ -156,13 +159,15 @@ Figure 4(b) shows the run-time (in ms) for each wallet balance. <br>
 It takes about 2 minutes to get the results. <br>
 The result is shown in Figure 4(b), Section 5.2.3. <br>
 The Figure shows that although solving a linear diophantine equation is NP-complete in general, the equation can be solved quickly, given the real settings of Brisbane's ETC system. <br>
-Note: Since the runtimes heavily depend on the hardware on which the code is executed, the results will probably vary.
+Note: Since the runtimes heavily depend on the hardware on which the code is executed, the results can vary significantly. However, the overall trend should be observable, i.e., the values
+of green points should be equal to or higher than those of the blue points, and the values of blue points should be equal to or higher than those of the red points. The values should be on
+the millisecond scale, with most measurements taking at most a few minutes.
 
 #### Experiment 4: tsd-attack-with-heuristic
 The experiment is about the evaluation of the tsd-attack using the first heuristic. <br>
 Run the file *tsd-attack-with-heuristic.py*, and the results will be written to the *tsd-attack-with-heuristic.log* file. <br>
 The results show the thresholds, ASR, and APDs w.r.t the wallet range [w<sub>l</sub>, w<sub>u</sub>]. <br>
-It takes about 25 minutes to get the results. <br>
+It takes about 20 minutes to get the results. <br>
 The results show that ASR and APD metrics show an upward trend as the threshold decreases. This trend is particularly noticeable in larger wallet ranges ([20, 40], [40, 60]), indicating a contribution to the improvement in ASR compared to the lower ASRs before applying the heuristic. <br>
 The results are shown in Table 2, Section 5.3.
 
