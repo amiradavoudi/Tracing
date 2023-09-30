@@ -48,11 +48,10 @@ All the source codes are available through the below link: <br>
 ### Set up the environment
 First, install *Microsoft Visual C++ 2015-2022 Redistributable Package* as it is needed by the program in the next step. <br>
 Install *IBM ILOG CPLEX Optimization Studio Free Edition*. Please follow the instructions during the installation. <br> 
-Install Python 3.10. <br>
-Install the following Python packages: <br>
-pip install docplex==2.23.222 (docplex 2.23.222 or later) <br>
-pip install matplotlib==3.5.2 (matplotlib 3.5.2 or later) <br>
-pip install numpy==1.23.1
+Install Python 3.10 [(Link)](https://www.python.org/downloads/release/python-3100/)  <br>
+Install Node.js v18 or above [(Link)](https://nodejs.org/en) <br>
+The packages used in this repo are listed in *requirements.txt*. To install the packages, run `pip3 install -r requirements.txt`.
+
 
 ### Testing the Environment
 File *test.py* includes all the packages required for the execution of the source codes in this project. <br> 
