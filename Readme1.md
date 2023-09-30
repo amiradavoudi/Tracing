@@ -227,21 +227,11 @@ The result is shown in Figure 6(f), Section 8.
 
 
 #### Experiment 11: cd attack
-The experiment is about the evaluation of the cd attack. <br> 
-To generate the results, the following three steps should be performed: <br>
-
-(1) First, set the wallet range [w<sub>l</sub>, w<sub>u</sub>], where w<sub>l</sub> and w<sub>u</sub> indicate the lower and upper bounds of the range. 
-To this end, in the file *write-the-plausible-traces.py*, set the two variables *lower_bound_wallet* and *upper_bound_wallet*. 
-For example, the variables are set to 1 and 10 in the file, indicating the wallet range [1, 10]. 
-Then, run the file *write-the-plausible-traces.py*, which generates all plausible traces corresponding to all
-plausible wallet balances within the range [w<sub>l</sub>, w<sub>u</sub>], written to the file *plausible_traces.txt*. <br>
-(2) Run the file *create_partitions.js*, getting the file *plausible_traces.txt* as its
-input, and creates all the corresponding partitions written to the file *partitions.txt*. <br>
-(3) Run the file *cd-attack.py* that computes the ASRs given the partitions
-stored in the file *partitions.txt*. The results will be written to the *cd-attack.log* file. <br>
-The results show the average success rate (ASR) w.r.t the wallet range [w<sub>l</sub>, w<sub>u</sub>]. <br>
+The experiment is about the evaluation of the cd attack (Section 7 of the paper). <br> 
+Run the file *write-the-plausible-traces.py*, and the results will be written to the *cd-attack.log* file. <br>
+The results show the average success rate (ASR) w.r.t the wallet ranges: [0, 10], [10, 20], [20, 40]. <br>
 The ASR for approximately 61.38% of drivers is around 51%, which is relatively high, and the ASR for approximately 14.31% is relatively low, i.e., 11%. <br>
-It takes about 2 minutes to get the results. <br>
+It takes about 30 minutes to get the results. <br>
 The results are shown in Table 1, Section 5.1.
 
 #### Experiment 12: Figure 3
