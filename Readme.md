@@ -8,7 +8,10 @@ Artifacts HotCRP Id: **#6**
 Requested Badge: **Reproducible**
 
 ## Description
-This repository contains the source codes for reproducing the results shown in Tables 1 and 2. The codes also generate the plots of the figures in the main body of the paper, including Figure 3, 4(a), 4(b), 5, 6(a), 6(b), 6(c), 6(d), 6(e), 6(f).
+This repository contains three main folders: *CD-Attack*, *Figures*, and *TSD-Attack*. The CD-Attack folder contains
+source code related to the CD-Attack. The Figures folder contains files for reproducing the figures in the
+paper, including Figure 3, 4(a), 4(b), 5, 6(a), 6(b), 6(c), 6(d), 6(e), and 6(f). Finally, the TSD-Attack folder
+includes files related to the TSD-Attack.
 ### Security/Privacy Issues and Ethical Concerns
 There are no Security/Privacy Issues and Ethical Concerns.
 
