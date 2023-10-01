@@ -45,8 +45,7 @@ The following describes how to access our artifact and all related and necessary
 Afterward, we describe how to set up everything and verify everything is set up correctly.
 
 ### Accessibility
-All the source codes are available through the below link: <br>
-[Source codes](https://github.com/amiradavoudi/Tracing.git) 
+All the source codes are available through the link [Source codes](https://github.com/amiradavoudi/Tracing.git) 
 
 ### Set up the environment
 First, install *Microsoft Visual C++ 2015-2022 Redistributable Package* as it is needed by the program in the next step. <br>
