@@ -68,10 +68,9 @@ def create_model(list_of_cycle_price, billing_period_, lower_wallet_, upper_wall
 # 2018 toll prices
 
 list_of_toll_price = [4.55, 2.68, 2.84, 1.72, 4.09, 5.46, 5.11, 5.11, 3.19]
-# list_lower_wallet = [1, 10, 20]
-# list_upper_wallet = [10, 20, 40]
-list_lower_wallet = [1]
-list_upper_wallet = [10]
+list_lower_wallet = [1, 10, 20]
+list_upper_wallet = [10, 20, 40]
+
 
 plt.figure()
 plt.grid()

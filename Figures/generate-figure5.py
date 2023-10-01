@@ -15,7 +15,7 @@ Each row of the file 'success-rates.txt' includes a list of success rates associ
 subfolders in Folder 'CD-attack-data'.  
 '''
 
-file1 = open('../success-rates.txt', 'r')
+file1 = open('success-rates.txt', 'r')
 list_of_list_of_success_rates = file1.readlines()
 file1.close()
 list_of_list_distribution_of_success_rates = []
