@@ -9,7 +9,7 @@ Requested Badge: **Reproducible**
 
 ## Description
 This repository contains three main folders: *CD-Attack*, *Figures*, and *TSD-Attack*. The CD-Attack folder contains
-source code related to the CD-Attack. The Figures folder contains files for reproducing the figures in the
+source codes related to the CD-Attack. The Figures folder contains files for reproducing the figures in the
 paper, including Figure 3, 4(a), 4(b), 5, 6(a), 6(b), 6(c), 6(d), 6(e), and 6(f). Finally, the TSD-Attack folder
 includes files related to the TSD-Attack.
 ### Security/Privacy Issues and Ethical Concerns
@@ -138,7 +138,7 @@ We describe each experiment as follows:
 
 #### Experiment 1: tsd-attack
 The experiment is about the evaluation of the tsd-attack. <br>
-Run the file *tsd-attack.py*, and the results will be written to the *tsd-attack.log* file. <br>
+Run the file *tsd-attack.py* (in TSD-Attack folder), and the results will be written to the *tsd-attack.log* file. <br>
 The results show the average success rate (ASR) and number of plausible wallets w.r.t the wallet range [w<sub>l</sub>, w<sub>u</sub>]. <br>
 It takes about 2 minutes to get the results. <br>
 The results show that the adversary's ASR is significantly high, 94%, affecting 61% of drivers, and nearly 54% affecting 14% of drivers. <br>
@@ -167,7 +167,7 @@ the millisecond scale, with most measurements taking at most a few minutes.
 
 #### Experiment 4: tsd-attack-with-heuristic
 The experiment is about the evaluation of the tsd-attack using the first heuristic. <br>
-Run the file *tsd-attack-with-heuristic.py*, and the results will be written to the *tsd-attack-with-heuristic.log* file. <br>
+Run the file *tsd-attack-with-heuristic.py* (in TSD-Attack folder), and the results will be written to the *tsd-attack-with-heuristic.log* file. <br>
 The results show the thresholds, ASR, and APDs w.r.t the wallet range [w<sub>l</sub>, w<sub>u</sub>]. <br>
 It takes about 20 minutes to get the results. <br>
 The results show that ASR and APD metrics show an upward trend as the threshold decreases. This trend is particularly noticeable in larger wallet ranges ([20, 40], [40, 60]), indicating a contribution to the improvement in ASR compared to the lower ASRs before applying the heuristic. <br>
@@ -232,7 +232,7 @@ The result is shown in Figure 6(f), Section 8.
 
 #### Experiment 11: cd attack
 The experiment is about the evaluation of the cd attack (Section 7 of the paper). <br> 
-Run the file *write-the-plausible-traces.py*, and the results will be written to the *cd-attack.log* file. <br>
+Run the file *write-the-plausible-traces.py* (in CD-Attack folder), and the results will be written to the *cd-attack.log* file. <br>
 The results show the average success rate (ASR) w.r.t the wallet ranges: [0, 10], [10, 20], [20, 40]. <br>
 The ASR for approximately 61.38% of drivers is around 51%, which is relatively high, and the ASR for approximately 14.31% is relatively low, i.e., 11%. <br>
 It takes about 30 minutes to get the results. <br>
