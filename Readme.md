@@ -10,7 +10,7 @@ Requested Badge: **Reproducible**
 ## Description
 This repository contains three main folders: `CD-Attack`, `Figures`, and `TSD-Attack`. The CD-Attack folder contains
 source codes related to the CD-Attack. The Figures folder contains files for reproducing the figures in the
-paper, including Figure 3, 4(a), 4(b), 5, 6(a), 6(b), 6(c), 6(d), 6(e), and 6(f). Finally, the TSD-Attack folder
+paper, including Figures 3, 4(a), 4(b), 5, 6(a), 6(b), 6(c), 6(d), 6(e), and 6(f). Finally, the TSD-Attack folder
 includes files related to the TSD-Attack.
 ### Security/Privacy Issues and Ethical Concerns
 There are no Security/Privacy Issues and Ethical Concerns.
