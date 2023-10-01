@@ -56,7 +56,7 @@ The packages used in this repo are listed in *requirements.txt*. To install the 
 
 
 ### Testing the Environment
-File *test.py* includes all the packages required for the execution of the source codes in this project. <br> 
+File `test.py` includes all the packages required for the execution of the source codes in this project. <br> 
 Run the file *test.py*. If all the required packages are installed properly, the log file *test.log* should be created, and outputs are written there,
 from *output1* to *output5*. Besides, the file *test-figure.pdf* should be created, showing a graph. <br>
 
