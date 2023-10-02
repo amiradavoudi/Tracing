@@ -1,19 +1,22 @@
 from docplex.cp.model import CpoModel
 from decimal import *
-from sys_logger import sys_log
 import matplotlib.pyplot as plt
 import numpy as np
 import math
 import time
-
+import os.path
+import sys
+directory = os.path.dirname(os.path.abspath("__file__"))
+sys.path.append(os.path.dirname(os.path.dirname(directory)))
+from Tracing.sys_logger import sys_log
+logfile = 'figure4-b.log'
+logger1 = sys_log(logfile, 'figure4-b', 0)
 '''
 This file generates the graph concerning Run-time (ms) per wallet balance. It should be noted that the resulted 
 run-times depend on the system on which the source code is run. The source code is performed on Windows Server 2019 
 Standard (64-bit), with 96.0 GB RAM, with x64-based CPU 3.70 GHz, Intel(R) Xeon(R) E-2288G. 
 '''
 
-logfile = 'figure4-b.log'
-logger1 = sys_log(logfile, 'figure4-b', 0)
 
 '''
 Function create_list_of_all_plausible_traces creates all plausible traces corresponding to all wallet balances within 

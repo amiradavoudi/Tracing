@@ -1,12 +1,15 @@
 from docplex.cp.model import CpoModel
 from decimal import *
-from sys_logger import sys_log
 import matplotlib.pyplot as plt
 import numpy as np
 import math
 import random
 import time
-
+import os.path
+import sys
+directory = os.path.dirname(os.path.abspath("__file__"))
+sys.path.append(os.path.dirname(os.path.dirname(directory)))
+from Tracing.sys_logger import sys_log
 logfile = 'figure6-a.log'
 logger1 = sys_log(logfile, 'figure6-a', 0)
 
