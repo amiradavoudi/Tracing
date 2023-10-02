@@ -67,11 +67,10 @@ def create_model(list_of_cycle_price, billing_period_, lower_wallet_, upper_wall
 
 # 2018 toll prices
 
-#
-# list_lower_wallet = [0, 10, 20]
-# list_upper_wallet = [10, 20, 40]
-list_lower_wallet = [0, 10]
-list_upper_wallet = [10, 20]
+
+list_lower_wallet = [0, 10, 20]
+list_upper_wallet = [10, 20, 40]
+
 
 for lower_bound_wallet, upper_bound_wallet in zip(list_lower_wallet, list_upper_wallet):
     wallet_range = [lower_bound_wallet, upper_bound_wallet]
