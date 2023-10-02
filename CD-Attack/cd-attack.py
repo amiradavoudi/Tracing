@@ -1,5 +1,8 @@
-from sys_logger import sys_log
-
+import os.path
+import sys
+directory = os.path.dirname(os.path.abspath("__file__"))
+sys.path.append(os.path.dirname(os.path.dirname(directory)))
+from Tracing.sys_logger import sys_log
 logfile = 'cd-attack.log'
 logger1 = sys_log(logfile, 'cd-attack', 0)
 
