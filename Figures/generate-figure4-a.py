@@ -122,7 +122,7 @@ for lower_wallet, upper_wallet in zip(list_lower_wallet, list_upper_wallet):
     plt.xlim(0, 40)
 
     plt.xlabel('Wallet balances (in dollar)')
-    plt.ylabel('Number of solutions')
+    plt.ylabel('Number of plausible traces')
     list_of_num_of_sols.clear()
     list_of_wallets.clear()
     counter = counter + 1
