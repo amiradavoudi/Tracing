@@ -32,7 +32,7 @@ for j, list_of_avg_success_rate in enumerate(list_of_list_of_avg_success_rates):
     plt.xlabel('Number of toll stations')
     plt.ylabel('Average success rate (%)')
 
-plt.savefig("ASR-num-of-tolls.pdf", format="pdf", bbox_inches="tight")
+plt.savefig("figure6-f.pdf", format="pdf", bbox_inches="tight")
 
 plt.show()
 
