@@ -18,7 +18,6 @@ plt.figure()
 plt.grid()
 for j, list_of_avg_success_rate in enumerate(list_of_list_of_avg_success_rates):
     colors = ['r', 'b', 'g']
-
     plt.plot(list_of_toll_stations, list_of_avg_success_rate, '--', color=colors[j], marker='o', markerfacecolor='black', markersize=4, linewidth=2)
     labels1 = np.arange(9, 21, 1)
     plt.xticks(labels1, labels1)
