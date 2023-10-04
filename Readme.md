@@ -199,7 +199,7 @@ For more details, see the generated log file named *figure6-c.log*. <br>
 The results show the average success rate w.r.t each toll price range [1, j], 1 <= j <= 10. <br>
 It takes about 240 hours to get the results; the needed space is about 1 GB. To facilitate the quick generation of the 
 figure, we also provide the file *generate-figure6-c-condensed.py*, which takes a subset of the precomputed average 
-success rates as input and generates the figure. It takes about 60 minutes to get the result. <br>
+success rates as input and generates the figure. It takes about 4 hours and 30 minutes to get the result. <br>
 Figure 6(c) demonstrates that the ASR increases as the toll price range gets larger. The ASR increases from zero to almost 15%. <br>
 The result is shown in Figure 6(c), Section 8.
 
@@ -228,7 +228,7 @@ For more details, see the generated log file named *figure6-f.log*. <br>
 The result is Figure 6(f), showing the ASR for each number of toll stations. <br>
 It takes about 48 hours to get the results. To facilitate the quick generation of the figure, we also provide the file
 *generate-figure6-f-condensed.py*, which takes  a subset of the precomputed average success rates as input and
-generates the figure. It takes about 20 minutes to get the results.<br>
+generates the figure. It takes about 15 minutes to get the results.<br>
 Figure 6(f) illustrates that the algorithm's ASR remains high for a low number of toll stations. <br>
 The result is shown in Figure 6(f), Section 8.
 

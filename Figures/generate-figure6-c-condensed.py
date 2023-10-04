@@ -143,7 +143,7 @@ for upper_bound_price in range(8, max_price + 1, 1):
     list_of_upper_bound_prices.append(upper_bound_price)
     counter = counter + 1
     # We repeat the experiment 50 times
-    for seed in range(1, 2):
+    for seed in range(1, 51):
         list_of_toll_price = create_random_toll_price(min_price, upper_bound_price, number_of_toll_prices, seed + counter)
 
         max_frq = math.ceil(wallet_ / min(list_of_toll_price))
