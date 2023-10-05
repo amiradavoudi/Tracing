@@ -105,75 +105,75 @@ plt.grid()
 list_of_toll_stations = []
 list_of_list_of_avg_success_rates = []
 start = time.time()
+counter = 0
 for lower_wallet, upper_wallet in zip(list_lower_wallet, list_upper_wallet):
     wallet_range = f"[${lower_wallet}, ${upper_wallet}]"
     logger1.debug("wallet range: " + f"{wallet_range}")
-    for j in range(0, 1):
-        list_of_toll_price = [4.55, 2.68, 2.84, 1.72, 4.09, 5.46, 5.11, 5.11, 3.19]
-        low_val = min(list_of_toll_price)
-        high_val = max(list_of_toll_price)
-        '''
-        The index i denotes the number of toll stations we add to the Brisbane ETC system
-        '''
-        for i in range(0, 12):
-            random.seed(i + j)
-            if i != 0:
-                random_price = generate_flat_rand_num(low_val, high_val)
-                list_of_toll_price.append(random_price)
-            max_frq = math.ceil(upper_wallet / min(list_of_toll_price))
-            billing_period_ = max_frq
-            length_of_toll_price = len(list_of_toll_price)
-            list_of_toll_stations.append(length_of_toll_price)
-            logger1.debug("-----------------------------------------------------------")
-            logger1.debug("number of toll stations: " + str(length_of_toll_price))
-            imodel, q = create_model(list_of_toll_price, billing_period_, lower_wallet, upper_wallet)
-            imodel.print_information()
-            all_sols = imodel.start_search()
+    list_of_toll_price = [4.55, 2.68, 2.84, 1.72, 4.09, 5.46, 5.11, 5.11, 3.19]
+    low_val = min(list_of_toll_price)
+    high_val = max(list_of_toll_price)
+    '''
+    The index i denotes the number of toll stations we add to the Brisbane ETC system
+    '''
+    for i in range(0, 12):
+        random.seed(i)
+        if i != 0:
+            random_price = generate_flat_rand_num(low_val, high_val)
+            list_of_toll_price.append(random_price)
+        max_frq = math.ceil(upper_wallet / min(list_of_toll_price))
+        billing_period_ = max_frq
+        length_of_toll_price = len(list_of_toll_price)
+        list_of_toll_stations.append(length_of_toll_price)
+        logger1.debug("-----------------------------------------------------------")
+        logger1.debug("number of toll stations: " + str(length_of_toll_price))
+        imodel, q = create_model(list_of_toll_price, billing_period_, lower_wallet, upper_wallet)
+        imodel.print_information()
+        all_sols = imodel.start_search()
 
-            dict_wallet_sols = create_list_of_all_plausible_traces(length_of_toll_price, q, all_sols)
-            list_of_wallets = dict_wallet_sols.keys()
-            list_of_wallets = list(list_of_wallets)
-            number_of_all_wallets = len(list_of_wallets)
+        dict_wallet_sols = create_list_of_all_plausible_traces(length_of_toll_price, q, all_sols)
+        list_of_wallets = dict_wallet_sols.keys()
+        list_of_wallets = list(list_of_wallets)
+        number_of_all_wallets = len(list_of_wallets)
 
-            list_of_num_of_sols = []
-            for wallets, list_of_solutions in dict_wallet_sols.items():
-                number_of_sols = len(list_of_solutions)
-                list_of_num_of_sols.append(number_of_sols)
+        list_of_num_of_sols = []
+        for wallets, list_of_solutions in dict_wallet_sols.items():
+            number_of_sols = len(list_of_solutions)
+            list_of_num_of_sols.append(number_of_sols)
 
-            list_of_success_rates = []
-            log_success_rate_number_of_all_cycle_type_freq_sols = []
-            for num_of_sols in list_of_num_of_sols:
-                success_rate = 1 / num_of_sols
-                list_of_success_rates.append(success_rate)
-                success_rate = round(success_rate * 100, 2)
-                log_success_rate_number_of_all_cycle_type_freq_sols.append(success_rate)
+        list_of_success_rates = []
+        log_success_rate_number_of_all_cycle_type_freq_sols = []
+        for num_of_sols in list_of_num_of_sols:
+            success_rate = 1 / num_of_sols
+            list_of_success_rates.append(success_rate)
+            success_rate = round(success_rate * 100, 2)
+            log_success_rate_number_of_all_cycle_type_freq_sols.append(success_rate)
 
-            avg_success_rate = sum(list_of_success_rates) / len(list_of_success_rates)
-            avg_success_rate = round(avg_success_rate * 100, 2)
-            logger1.debug("list_of_wallets: " + str(list_of_wallets))
-            logger1.debug("average success rate: " + str(avg_success_rate))
-            list_of_avg_success_rate.append(avg_success_rate)
+        avg_success_rate = sum(list_of_success_rates) / len(list_of_success_rates)
+        avg_success_rate = round(avg_success_rate * 100, 2)
+        logger1.debug("list_of_wallets: " + str(list_of_wallets))
+        logger1.debug("average success rate: " + str(avg_success_rate))
+        list_of_avg_success_rate.append(avg_success_rate)
+    logger1.debug("=============================================")
+    logger1.debug("list_of_toll_price: " + str(list_of_toll_price))
+    logger1.debug("list of avg success rates:" + str(list_of_avg_success_rate))
+    colors = ['r', 'b', 'g']
+    plt.plot(list_of_toll_stations, list_of_avg_success_rate, '--', color=colors[counter], marker='o', markerfacecolor='black', markersize=4, linewidth=1.5)
+    labels1 = np.arange(9, 21, 1)
+    plt.xticks(labels1, labels1)
+    plt.xlim(9, 20)
 
-        logger1.debug("=============================================")
-        logger1.debug("list_of_toll_price: " + str(list_of_toll_price))
-        logger1.debug("list of avg success rates:" + str(list_of_avg_success_rate))
-        colors = ['r', 'g', 'b', "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"]
-        plt.plot(list_of_toll_stations, list_of_avg_success_rate, '--', color=colors[j], marker='o', markerfacecolor='black', markersize=4, linewidth=1.5)
-        labels1 = np.arange(9, 21, 1)
-        plt.xticks(labels1, labels1)
-        plt.xlim(9, 20)
+    labels2 = np.arange(0, 101, 10)
+    plt.yticks(labels2, labels2)
+    max_y_range = 101
+    plt.ylim(0, max_y_range)
 
-        labels2 = np.arange(0, 101, 10)
-        plt.yticks(labels2, labels2)
-        max_y_range = 101
-        plt.ylim(0, max_y_range)
-
-        plt.xlabel('Number of toll stations')
-        plt.ylabel('Success rate (%)')
-        list_of_toll_stations.clear()
-        list_of_avg_success_rate.clear()
-        list_of_toll_price.clear()
-        logger1.debug("---------------------------------------------------------------------------------------------")
+    plt.xlabel('Number of toll stations')
+    plt.ylabel('Success rate (%)')
+    list_of_toll_stations.clear()
+    list_of_avg_success_rate.clear()
+    list_of_toll_price.clear()
+    counter = counter + 1
+    logger1.debug("---------------------------------------------------------------------------------------------")
 plt.savefig("figure6-f.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
