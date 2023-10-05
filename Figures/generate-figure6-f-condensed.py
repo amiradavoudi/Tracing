@@ -100,6 +100,7 @@ plt.grid()
 list_of_toll_stations = []
 list_of_list_of_avg_success_rates = []
 start = time.time()
+# counter defines the color of each plot
 counter = 0
 list_precomputed_asr = [4.96, 1.65, 1.17, 0.55, 0.28, 0.2, 0.16, 0.1, 0.06, 0.04, 0.02, 0.01]
 

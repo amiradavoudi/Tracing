@@ -105,6 +105,7 @@ plt.grid()
 list_of_toll_stations = []
 list_of_list_of_avg_success_rates = []
 start = time.time()
+# counter defines the color of each plot
 counter = 0
 for lower_wallet, upper_wallet in zip(list_lower_wallet, list_upper_wallet):
     wallet_range = f"[${lower_wallet}, ${upper_wallet}]"
