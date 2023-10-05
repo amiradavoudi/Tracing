@@ -228,7 +228,7 @@ For more details, see the generated log file named *figure6-f.log*. <br>
 The result is Figure 6(f), showing the ASR for each number of toll stations. <br>
 It takes about 48 hours to get the results. To facilitate the quick generation of the figure, we also provide the file
 *generate-figure6-f-condensed.py*, which takes  a subset of the precomputed average success rates as input and
-generates the figure. It takes about 15 minutes to get the results.<br>
+generates the figure. It takes about 5 minutes to get the results.<br>
 Figure 6(f) illustrates that the algorithm's ASR remains high for a low number of toll stations. <br>
 The result is shown in Figure 6(f), Section 8.
 
