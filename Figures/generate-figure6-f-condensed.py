@@ -16,8 +16,9 @@ logger1 = sys_log(logfile, 'figure6-f', 0)
 
 '''
 To facilitate the quick generation of Figure6(f), we provide this file *generate-figure6-f-condensed.py*, which takes a 
-subset of the precomputed average success rates as input and generates the figure. The precomputed average success rates
-are stored in the list, namely list_precomputed_asr.
+subset of the precomputed average success rates as input and generates the figure. The precomputed data is related to
+the wallet range [20, 40] which takes quite large time of computation. The precomputed average success rates are stored
+in the list, namely list_precomputed_asr.
 '''
 
 
