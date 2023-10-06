@@ -264,3 +264,32 @@ The result is Figure 5, showing box plots indicating the distribution of success
 It takes about 1 minute to get the results. <br>
 The figure shows that half of the success rates (SRs) corresponding to the range of [0, 10] are nearly 50%, while the other half falls between 25% and 50% (shown in the first box plot). <br>
 The result is shown in Figure 5, Section 7.
+
+
+## Virtual machine environment
+We provide a virtual machine that has been configured with all the dependencies and prerequisites
+necessary to execute the source codes and generate the results in our paper. In the following, we explain the requirements and 
+the details for launching the environment.
+
+### Hardware Requirements
+The hardware should at least satisfy the following requirements. <br> 
+64-bit CPU (Intel / AMD architecture) <br>
+8 GB RAM <br>
+30 GB free disk space
+
+### Software Requirements
+The 64-bit version of Windows 10 and later, or Windows Server 2019 and later. <br>
+Download *VMware-workstation-full-15.5.7-17171714.exe*: [(Download link)](https://customerconnect.vmware.com/downloads/details?downloadGroup=WKST-1557-WIN&productId=799&rPId=55767). <br>
+
+### Accessibility
+The image of virtual machine is accessible through the link [(Download link)](https://zenodo.org/record/8411915).
+
+### Set up the environment
+Install `VMware-workstation-full-15.5.7-17171714.exe`. <br>
+Download all the files from the linked mentioned in Section *Accessibility*. <br>
+In the VMWare workstation environment, open the downloaded file `Clone of Windows 10 x64.vmx` and then run the 
+virtual machine. <br>
+After launching Windows 10 , enter the password, which is `123321`. <br>
+The source codes are located in the path *C:\Tracing*; however, you can download the updated source codes through [(Download link)](https://github.com/amiradavoudi/Tracing.git). <br>
+Now, the environment is ready to execute the codes.
+
