@@ -1,1 +1,1 @@
-The hash of git commit that matches the state the artifact was in at the time of submission: e7c4e3e
+The hash of git commit that matches the state the artifact was in at the time of submission: c60f58c
