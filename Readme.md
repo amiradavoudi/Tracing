@@ -133,7 +133,9 @@ We describe each experiment as follows:
  - How to execute it in detailed steps. <br>
  - What the expected result is. <br>
  - How long it takes and how much space it consumes on disk. (approximately) <br>
- - Which claim and results does it support, and how.
+ - Which claim and results does it support, and how. <br>
+`Note:` In the following experiments, when we specify that a file should be run, it should be executed within the folder
+where it is located. 
 
 #### Experiment 1: tsd-attack
 The experiment is about the evaluation of the tsd-attack. <br>
